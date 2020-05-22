@@ -1,0 +1,8 @@
+{
+  "realm": "front-realm",
+  "bearer-only": true,
+  "auth-server-url": "http://localhost:8080/auth/",
+  "ssl-required": "external",
+  "resource": "back-client",
+  "confidential-port": 0
+}
