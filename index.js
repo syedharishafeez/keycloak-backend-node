@@ -1,11 +1,14 @@
 var session = require("express-session");
 var Keycloak = require("keycloak-connect");
 const express = require("express");
+const cors = require("cors");
 
 var memoryStore = new session.MemoryStore();
 var keycloak = new Keycloak({ store: memoryStore });
 
 var app = express();
+
+app.use(cors());
 
 app.use(
   session({
